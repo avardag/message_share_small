@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    .row{
+      margin-top: 25vh;
+    }
+    h4{
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="row">
+    <div class="col s8 offset-s2">
+      <div id="message-show" class="card-panel hide">
+        <h4></h4>
+        <div><a href="./index.html" class="btn">Create a secret message</a></div>
+      </div>
+      <div id="message-form" class="card-panel">
+        <form action="">
+          <label for="">Enter a secret message</label>
+          <input id="message-input" type="text">
+          <button class="btn">Create</button>
+        </form>
+      </div>
+
+      <div id="link-form" class="card-panel hide">
+        <label for="">share this link with a friend</label>
+        <!-- <i class="material-icons prefix">phone</i> -->
+        <div class="input-field">
+          
+        <input  class="text-field" type="text" id="link-input">
+        <div class="btn btn-cb">
+          <span>CLick to copy to clipboard</span>
+        </div>
+      </div>
+        
+      </div>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
